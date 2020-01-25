@@ -7,7 +7,7 @@ mount_standoff = 35;
 mount_height = 28;
 
 flashlight_diameter = 20;
-flashlight_width =30;
+flashlight_width = 30;
 
 bar_flashlight_gap = 15;
 
