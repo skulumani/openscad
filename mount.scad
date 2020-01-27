@@ -91,10 +91,11 @@ cube([mount_height, mount_width, cube_height], center=true);
 translate(bar_center) rotate([90, 0, 0]) cylinder(r=bar_diameter/2, h=mount_width+5, center=true);
 translate(flashlight_center) rotate([90, 0, 0]) cylinder(r=flashlight_diameter/2, h=mount_width+5, center=true);
 // flashlight zip ties/velcro
-translate(flashlight_center) rotate([90, 0, 0]) zip_tie(zip_tie_width=14, zip_tie_radius=mount_height/2, zip_tie_height=2);
+translate(flashlight_center) rotate([90, 0, 0]) zip_tie(zip_tie_width=mount_width-5, zip_tie_radius=mount_height/2, zip_tie_height=2);
 
 // bar zip ties
-translate([0, -mount_width/2+7, 0]) translate(bar_center) rotate([90, 0, 0]) zip_tie(zip_tie_width=6, zip_tie_radius=mount_height/2, zip_tie_height=2);
-translate([0, mount_width/2-7, 0]) translate(bar_center) rotate([90, 0, 0]) zip_tie(zip_tie_width=6, zip_tie_radius=mount_height/2, zip_tie_height=2);
+//translate([0, -mount_width/2+7, 0]) 
+    translate(bar_center) rotate([90, 0, 0]) zip_tie(zip_tie_width=mount_width-5, zip_tie_radius=mount_height/2, zip_tie_height=2);
+//translate([0, mount_width/2-7, 0]) translate(bar_center) rotate([90, 0, 0]) zip_tie(zip_tie_width=6, zip_tie_radius=mount_height/2, zip_tie_height=2);
 }
 
