@@ -16,5 +16,12 @@ points = [
         [base_diameter/2-wall_thickness, total_height],
         [base_diameter/2-2*wall_thickness, total_height-wall_thickness]];
 
+difference() {
 rotate_extrude() polygon(points=points);
+translate([0, 0, 70])
+cube(size =[50, 200, 90], center=true);
+rotate([0,0,90])
+translate([0, 0, 70])
+cube(size =[50, 200, 90], center=true);
+}
 
